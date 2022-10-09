@@ -5,6 +5,20 @@
   background-color: #17181F;
   border-radius: 6px;
 
+  .warnText{
+    color: #ffb800;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.1rem;
+
+    button{
+      margin-left: 5px;
+      background: transparent;
+      border: 0;
+    }
+  }
+
   form {
     display: flex;
     justify-content: center;

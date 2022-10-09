@@ -1,3 +1,4 @@
+import { GetStaticProps } from "next";
 import Head from "next/head";
 import styles from "../styles/styles.module.scss"
 
@@ -27,4 +28,14 @@ export default function Home() {
       </main>
     </>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const UMAHORA = 60 * 60
+  return {
+    props: {
+
+    },
+    revalidate: UMAHORA
+  }
 }
